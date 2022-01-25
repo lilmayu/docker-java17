@@ -1,4 +1,6 @@
 #!/bin/bash
+su - docker
+
 cd /home/container
 
 echo Updating resolv.conf...

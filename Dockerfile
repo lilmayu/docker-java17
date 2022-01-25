@@ -8,7 +8,7 @@ RUN apt-get update -y \
 
 ## RUN echo "container:container" | chpasswd && adduser container sudo
 
-RUN echo "namespace 8.8.8.8" >> /etc/resolv.conf
+## RUN echo "namespace 8.8.8.8" >> /etc/resolv.conf
 
 USER container
 ENV  USER=container HOME=/home/container
@@ -17,4 +17,6 @@ WORKDIR /home/container
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-CMD ["/bin/bash", "/entrypoint.sh"]
+ENTRYPOINT "/entrypoint.sh"
+
+## CMD ["/bin/bash", "/entrypoint.sh"]

@@ -1,6 +1,12 @@
 #!/bin/bash
 cd /home/container
 
+echo === Information about current user ===
+id
+
+su - container
+$@
+
 echo === Resolv.conf ===
 cat /etc/resolv.conf
 echo ==== ==== =====

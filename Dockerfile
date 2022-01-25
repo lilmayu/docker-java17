@@ -8,7 +8,7 @@ RUN apt-get update -y \
 
 ## RUN echo "container:container" | chpasswd && adduser container sudo
 
-RUN echo "container\tALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+RUN echo "test xd" >> /sus.txt
 
 USER container
 ENV  USER=container HOME=/home/container

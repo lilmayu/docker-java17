@@ -1,6 +1,9 @@
 #!/bin/bash
 cd /home/container
 
+echo Updating resolv.conf...
+echo namespace 8.8.8.8 >> /etc/resolv.conf
+
 # Output Current Java Version
 java -version
 

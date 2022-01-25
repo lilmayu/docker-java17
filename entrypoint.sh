@@ -3,6 +3,8 @@ cd /home/container
 
 echo Updating resolv.conf...
 cat /etc/resolv.conf
+echo Testing...
+cat /sus.txt
 sudo echo namespace 8.8.8.8 >> /etc/resolv.conf
 
 # Output Current Java Version

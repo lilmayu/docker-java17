@@ -4,7 +4,7 @@ MAINTAINER CraftMania.cz, <services@craftmania.cz>
 
 RUN apt-get update -y \
  	&& apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
- 	&& useradd -d /home/container -m container
+ 	&& useradd -d /home/container -m container && echo namespace 8.8.8.8 >> /etc/resolv.conf
 
 USER container
 ENV  USER=container HOME=/home/container

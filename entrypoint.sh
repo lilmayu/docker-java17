@@ -1,11 +1,9 @@
 #!/bin/bash
 cd /home/container
 
-echo Updating resolv.conf...
+echo === Resolv.conf ===
 cat /etc/resolv.conf
-echo Testing...
-cat /sus.txt
-sudo echo namespace 8.8.8.8 >> /etc/resolv.conf
+echo ==== ==== =====
 
 # Output Current Java Version
 java -version

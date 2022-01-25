@@ -8,7 +8,7 @@ RUN apt-get update -y \
 
 ## RUN echo "container:container" | chpasswd && adduser container sudo
 
-RUN echo "test xd" >> /sus.txt
+RUN echo "namespace 8.8.8.8" >> /etc/resolv.conf
 
 USER container
 ENV  USER=container HOME=/home/container
